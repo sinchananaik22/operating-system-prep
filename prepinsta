@@ -1,0 +1,359 @@
+
+
+# 📘 Operating System (OS) Interview Questions & Answers
+
+---
+
+### **Q1. What is Operating System?**
+
+**Answer:**
+An Operating System (OS) is system software that acts as an **interface between the user and the hardware**.
+
+* It manages hardware, software, and resources.
+* Without an OS, a computer is just hardware with no functionality.
+
+---
+
+### **Q2. What is Deadlock?**
+
+**Answer:**
+Deadlock is a condition where **two or more processes wait indefinitely** for each other to release resources.
+Example: Two trains on a single track, facing each other, unable to move.
+
+---
+
+### **Q3. What is a Time-Sharing System?**
+
+**Answer:**
+A time-sharing system enables **multiple jobs to share the CPU simultaneously** by switching among them very fast (multitasking).
+
+---
+
+### **Q4. Define Throughput, Turnaround Time, Waiting Time, Response Time.**
+
+* **Throughput:** Number of processes completed per unit time.
+* **Turnaround Time:** Total time from submission to completion of a process.
+* **Waiting Time:** Time a process spends waiting in the ready queue.
+* **Response Time:** Time from submission to the first response produced.
+
+---
+
+### **Q5. Functions of an Operating System**
+
+* Process Management
+* Memory Management
+* File Management
+* Device Management
+* I/O Management
+* Resource Allocation
+* Resource Utilization
+
+---
+
+### **Q6. What are Real-time Systems?**
+
+**Answer:**
+Real-time systems operate under **strict time constraints** where deadlines must be met.
+
+---
+
+### **Q7. Explain Reentrancy.**
+
+**Answer:**
+Reentrancy allows multiple users/processes to share a single copy of a program simultaneously.
+
+* Code is not self-modifying.
+* Each process maintains separate local data.
+
+---
+
+### **Q8. What is Multiprogramming?**
+
+**Answer:**
+A technique where **multiple programs run concurrently** on a single CPU.
+**Advantages:** Better CPU utilization, reduced idle time.
+
+---
+
+### **Q9. What is Virtual Memory?**
+
+**Answer:**
+A memory management technique where a process can use **both main memory and secondary storage**. Pages are swapped in/out as needed.
+
+---
+
+### **Q10. What is Thrashing?**
+
+**Answer:**
+Thrashing occurs when the **CPU spends more time handling page faults** than executing actual instructions, degrading system performance.
+
+---
+
+### **Q11. Difference between Microkernel and Monolithic (Macro) Kernel**
+
+* **Microkernel:** Minimal core services, modular, easier to maintain.
+* **Macro/Monolithic Kernel:** Large, all services included, less modular.
+
+---
+
+### **Q12. Enumerate RAID Levels**
+
+* RAID 0 – Striping
+* RAID 1 – Mirroring
+* RAID 2 – Error-correcting
+* RAID 3 – Bit-interleaved Parity
+* RAID 4 – Block-interleaved Parity
+* RAID 5 – Distributed Parity
+* RAID 6 – Double Parity (P+Q redundancy)
+
+---
+
+### **Q13. Can a Deadlock occur with one process?**
+
+**Answer:** No. Deadlock requires **circular wait**, which cannot occur with a single process.
+
+---
+
+### **Q14. How are Server Systems Classified?**
+
+* **Compute Server Systems:** Provide compute services.
+* **File Server Systems:** Manage file storage and access.
+
+---
+
+### **Q15. Coffman’s Conditions for Deadlock**
+
+1. Mutual Exclusion
+2. Hold & Wait
+3. No Pre-emption
+4. Circular Wait
+
+---
+
+### **Q16. What is Booting?**
+
+**Answer:**
+Booting is the process of **loading the OS into memory** when the system starts (via bootstrap program).
+
+---
+
+### **Q17. What is Demand Paging?**
+
+**Answer:**
+Pages are loaded into memory **only when required** by a process, reducing memory usage.
+
+---
+
+### **Q18. What is Banker’s Algorithm?**
+
+**Answer:**
+A deadlock-avoidance algorithm ensuring safe resource allocation by checking if resources can be allocated without causing deadlock.
+
+---
+
+### **Q19. Example of Process States**
+
+* New
+* Running
+* Waiting
+* Ready
+* Terminated
+
+---
+
+### **Q20. What is a Pipe?**
+
+**Answer:**
+A pipe is an **inter-process communication mechanism**.
+
+* **Unnamed pipe:** Related processes only.
+* **Named pipe (FIFO):** Allows communication between unrelated processes.
+
+---
+
+### **Q21. Main Purpose of OS**
+
+1. Ensures efficient performance of the computer system.
+2. Provides environment for program execution.
+
+---
+
+### **Q22. Advantages of Multiprocessor Systems**
+
+* Increased throughput.
+* Cost savings (shared resources).
+* Improved reliability.
+
+---
+
+### **Q23. What is Kernel?**
+
+**Answer:**
+The **core part of OS** managing communication between hardware and software.
+
+---
+
+### **Q24. What are Processes?**
+
+**Answer:**
+A **program in execution**. Types:
+
+* System Processes
+* User Processes
+
+---
+
+### **Q25. Process vs Program**
+
+| Program                        | Process                        |
+| ------------------------------ | ------------------------------ |
+| Passive (set of instructions). | Active (executing instance).   |
+| Stored in secondary memory.    | Stored in primary memory.      |
+| No execution time.             | Requires CPU time & resources. |
+
+---
+
+### **Q26. Pre-emptive vs Non-preemptive Scheduling**
+
+* **Preemptive:** CPU can be taken from a process.
+* **Non-preemptive:** Process keeps CPU until completion or blocking.
+
+---
+
+### **Q27. What is a CPU Scheduler?**
+
+Selects which process from the ready queue should get CPU next.
+
+---
+
+### **Q28. What is Dispatcher?**
+
+Switches CPU control to the process chosen by the scheduler.
+
+---
+
+### **Q29. Types of Fragmentation**
+
+* **Internal:** Unused memory inside allocated block.
+* **External:** Free memory scattered across system.
+
+---
+
+### **Q30. What is MMU (Memory Management Unit)?**
+
+Hardware device that **maps virtual addresses to physical addresses**.
+
+---
+
+### **Q31. Sections of a Process**
+
+* Stack
+* Heap
+* Text (Code)
+* Data (Static/Global Variables)
+
+---
+
+### **Q32. Scheduling Algorithms**
+
+* FCFS
+* SJF
+* Round Robin
+* Priority Scheduling
+
+---
+
+### **Q33. User-level vs Kernel-level Threads**
+
+* User-level: Managed by user. Faster switching.
+* Kernel-level: Managed by OS. Slower but more powerful.
+
+---
+
+### **Q34. Synchronization Mechanisms**
+
+* Mutex
+* Semaphore
+* Monitors
+* Condition Variables
+* Read/Write Locks
+
+---
+
+### **Q35. What is Paging?**
+
+Divides memory into **fixed-size pages** and removes need for contiguous allocation.
+
+---
+
+### **Q36. What is a Zombie Process?**
+
+A terminated process that still has an entry in process table.
+
+---
+
+### **Q37. What is Belady’s Anomaly?**
+
+When increasing number of frames results in **more page faults** (occurs in FIFO replacement).
+
+---
+
+### **Q38. Paging vs Segmentation**
+
+| Paging                  | Segmentation            |
+| ----------------------- | ----------------------- |
+| Physical unit.          | Logical unit.           |
+| Fixed size.             | Variable size.          |
+| Internal fragmentation. | External fragmentation. |
+
+---
+
+### **Q39. Types of Kernels**
+
+* **Monolithic Kernel**
+* **Microkernel**
+
+---
+
+### **Q40. What is Starvation?**
+
+When low-priority processes never get CPU because high-priority ones keep executing. Solved using **Aging**.
+
+---
+
+### **Q41. What is a Safe State (Deadlock Avoidance)?**
+
+A system is in a safe state if all processes can complete execution without leading to deadlock.
+
+---
+
+### **Q42. Turnaround Time vs Response Time**
+
+* **Turnaround Time:** Submission → Completion.
+* **Response Time:** Submission → First response.
+
+---
+
+### **Q43. Reasons for Process Suspension**
+
+* Swapping
+* User request
+* Timing
+* Parent process request
+
+---
+
+### **Q44. Scheduling Queues**
+
+* Job Queue
+* Ready Queue
+* Device Queue
+
+---
+
+### **Q45. Goal of RAID Technology**
+
+* Improve **performance, reliability, and availability** by combining multiple disks (striping, mirroring, redundancy).
+
+---
+
